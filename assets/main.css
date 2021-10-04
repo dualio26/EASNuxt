@@ -19,6 +19,7 @@ body {
   background-color: #f5f3ee;
   margin: 0;
   z-index: 3;
+  overflow-x: hidden;
 }
 
 footer {
@@ -39,13 +40,15 @@ h3 {
 .header {
   list-style-type: none;
   font: normal normal bold 16px/19px Chivo;
+  height: 100px;
 }
 
 .header .navblock {
   display: block;
   list-style-type: none;
   width: -webkit-fill-available;
-  margin-right: 1%;
+  margin-top: 0;
+  margin-bottom: auto;
 }
 
 .header .navblock li {
@@ -55,6 +58,8 @@ h3 {
 .header .navblock img {
   float: left;
   width: 10%;
+  padding-left: 2%;
+  padding-top: 0.5%;
 }
 
 .header .navblock .links {
@@ -78,6 +83,7 @@ h3 {
 }
 
 .banner {
+  margin-top: 2%;
   width: 100%;
 }
 
@@ -92,7 +98,6 @@ h3 {
 }
 
 .banner .SubTitle p a button {
-  margin-top: 5%;
   border: none;
   font-size: x-large;
   padding-left: 2%;
@@ -130,7 +135,7 @@ h3 {
 }
 
 .buttons {
-  margin-bottom: 10%;
+  margin-bottom: 3%;
 }
 
 button a {
@@ -146,6 +151,13 @@ button a {
   display: none;
   list-style-type: none;
   transform: translateX(-10%) translateY(56%);
+  position: absolute;
+}
+
+#CaseStudChild {
+  display: none;
+  list-style-type: none;
+  transform: translateX(22%) translateY(37%);
   position: absolute;
 }
 
@@ -178,19 +190,21 @@ button a {
   z-index: 1;
   right: 100%;
 }
+
 .Cap1 {
   position: absolute;
   width: 100%;
   padding: 8%;
   content: '';
   z-index: 1;
+  transform: translateY(50%);
   border-radius: 0px 300px 300px 0px;
   background-color: rgba(95, 165, 212, 0.65);
   color: rgba(95, 165, 212, 0.65);
 }
 
 .CaseStudy1 {
-  margin-top: 14%;
+  margin-top: 10%;
   padding: 2% 2%;
   border-radius: 300px 0px 0px 300px;
   margin-left: auto;
@@ -220,46 +234,46 @@ button a {
 
 .CaseStudy2 {
   margin-left: 10%;
-  margin-top: 12%;
+  margin-top: 10%;
 }
 
 .CaseStudy2 img {
   height: auto;
-  width: 30%;
+  width: 20%;
   position: absolute;
-  transform: translateX(130%);
+  transform: translateX(228%);
 }
 
 .CSText2 {
   width: 40%;
   font-family: Chivo;
-  font-size: large;
+  font-size: x-large;
   display: block;
 }
 
 .CSText {
   font-family: Chivo;
-  font-size: large;
+  font-size: x-large;
   display: block;
 }
 
 .CSText3 {
   width: 80%;
   font-family: Chivo;
-  font-size: large;
+  font-size: x-large;
   display: block;
 }
 
 .CaseStudy3 {
   margin-left: 50%;
-  margin-top: 30%;
+  margin-top: 10%;
 }
 
 .CaseStudy3 img {
   height: auto;
-  width: 30%;
+  width: 20%;
   position: absolute;
-  transform: translateX(-120%);
+  transform: translateX(-140%);
 }
 
 .ClientList {
@@ -445,17 +459,38 @@ button a {
 }
 
 .Insights {
+  padding-top: 8%;
+  padding-bottom: 8%;
   margin-top: 6%;
   background-repeat: no-repeat;
   background-position: center;
-  height: auto;
-  min-height: 100vh;
-  background-size: cover;
+  background-size: 140%;
   background-image: url('../images/1920px-19.svg');
+  margin-bottom: 6%;
 }
 
-.Insights div {
-  margin-top: 15%;
+.InGrid {
+  color: #f5f3ee;
+  display: grid;
+  grid-template-columns: 21% 21% 21% 21%;
+  margin-top: 2%;
+  margin-left: 8%;
+  margin-right: 8%;
+  grid-gap: 5%;
+}
+
+.InItem {
+  width: 100%;
+}
+
+.InItem h2 {
+  font-size: 250%;
+  margin-bottom: 10%;
+}
+
+.InItem p {
+  font-family: Chivo;
+  font-size: large;
 }
 
 .Insights h1 {
@@ -564,7 +599,8 @@ form {
   color: #86c886;
   float: right;
   padding-top: 1%;
-  transform: translateY(-30%);
+  width: 17% !important;
+  transform: translateY(-1500%);
   padding-right: 2%;
   top: 0;
 }
@@ -606,8 +642,8 @@ form textarea {
   width: 80%;
   padding-left: 15%;
   padding-bottom: 3%;
-  padding-top: 3%;
-  margin-top: 2%;
+  padding-top: 4%;
+  margin-top: 5%;
   margin-bottom: 2%;
 }
 
@@ -622,6 +658,7 @@ form textarea {
 
 .CMiddle {
   padding-right: 5%;
+  padding-top: 4%;
   width: 90%;
   border-radius: 0px 300px 300px 0px;
 }
@@ -631,8 +668,72 @@ form textarea {
   width: 90%;
 }
 
+.SBack {
+  background-color: #246087;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23397fac' fill-opacity='0.4'%3E%3Cpath opacity='1' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  color: #f5f3ee;
+}
+
+.SContent {
+  width: 100%;
+  padding-left: 15%;
+  display: flex;
+  padding-bottom: 4%;
+  padding-top: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.Simg {
+  position: absolute;
+  width: 7%;
+  margin-top: 3%;
+}
+
+.C1 {
+  width: 26%;
+}
+
+.Pimg {
+  border-radius: 0%;
+  border: none;
+  width: 88%;
+  margin-top: -21%;
+  border-radius: 300px;
+}
+
+.Img4 {
+  border: solid 10px #86c886;
+}
+
+.Img3 {
+  border: solid 10px #246087;
+}
+
+.C2 {
+  width: 49%;
+  margin-left: auto;
+  margin-right: 25%;
+}
+
+.C2 h1 {
+  margin-bottom: 6%;
+}
+
+.C2 p,
+.C2 ul li {
+  font-size: large;
+  font-family: Chivo;
+}
+
+.C2 ul li {
+  margin-left: 2.5%;
+}
+
 .RquesBtn {
-  padding: 1.25%;
+  padding: 1.5% 2%;
+  font-size: large;
   border-radius: 300px;
   margin-top: 5%;
   background-color: #246087;
@@ -644,10 +745,24 @@ form textarea {
   color: #f5f3ee;
 }
 
+.InBtn {
+  padding: 4% 10%;
+  font-size: x-large;
+  border-radius: 300px;
+  margin-top: 15%;
+  background-color: #569656;
+}
+
+.InBtn a {
+  font-family: Chivo;
+  text-decoration: none;
+  color: #f5f3ee;
+}
+
 .SendBtn {
   border-style: none;
   background-color: #86c886;
-  padding: 3% 1%;
+  padding: 2% 5%;
   width: 30%;
   border-radius: 300px;
   font-size: x-large;
@@ -665,13 +780,9 @@ form textarea {
 /*responsive page layout*/
 
 @media only screen and (min-width: 1950px) {
-  .links {
-    margin-top: 1.4% !important;
-  }
-
   .CaseStudy3 {
     margin-left: 50%;
-    margin-top: 28%;
+    margin-top: 15%;
   }
 
   .ClientList {
@@ -689,6 +800,12 @@ form textarea {
   .CSText2,
   .CSText3 {
     font-size: xx-large;
+  }
+
+  .fa-home {
+    padding-top: 1%;
+    width: 17% !important;
+    transform: translateX(25%) translateY(-1200%);
   }
 }
 
@@ -872,6 +989,23 @@ form textarea {
     transform: translateX(180%);
   }
 
+  .Pimg {
+    width: 120%;
+  }
+
+  .C2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .C2 h1 {
+    font-size: medium;
+  }
+
+  .C2 p {
+    font-size: small;
+  }
+
   .container p {
     display: none;
   }
@@ -907,7 +1041,7 @@ form textarea {
   }
 
   .CaseStudy2 img {
-    transform: translateX(160%);
+    transform: translateX(250%);
   }
 
   .CSTitles2 {

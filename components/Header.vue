@@ -1,21 +1,39 @@
 <template>
   <div id="Top" class="header">
+    <!--Desktop Navigation-->
     <ul class="navblock">
-      <li><img src="../images/eas-logo white@2x.png" alt="" /></li>
-      <li class="links" style="padding-top: 0.8%">
+      <li>
+        <NuxtLink to="/"
+          ><img src="../images/eas-logo white@2x.png" alt=""
+        /></NuxtLink>
+      </li>
+      <li class="links" style="padding-top: 1%">
         <button>
-          <a href="#contact">Contact Us</a>
+          <a href="#GetTouch">Contact Us</a>
         </button>
       </li>
-      <li class="links"><a href="">Who We Are</a></li>
-      <li class="links"><a href="">Insights</a></li>
-      <li class="links"><a href="">Publications</a></li>
-      <li class="links"><a href="">Services</a></li>
-      <li class="links"><a href="">Case Studies</a></li>
+      <li class="links"><NuxtLink to="WhoWeAre">Who We Are</NuxtLink></li>
+      <li class="links"><NuxtLink to="Insight">Insights</NuxtLink></li>
+      <li class="links"><NuxtLink :to="PubsCa">Publications</NuxtLink></li>
+      <li class="links"><NuxtLink to="Services">Services</NuxtLink></li>
+      <li class="links">
+        <a href="javascript:void(0);" @click="CaseStud()"
+          >Case Studies<font-awesome-icon icon="chevron-down" />
+        </a>
+        <ul id="CaseStudChild">
+          <li><NuxtLink to="SkiAre">SAANZ</NuxtLink></li>
+          <li style="margin-top: 10%">
+            <NuxtLink to="WAIWan">WAI Wanaka</NuxtLink>
+          </li>
+          <li style="margin-top: 10%">
+            <NuxtLink to="WaoSum">Woa Summit</NuxtLink>
+          </li>
+        </ul>
+      </li>
       <li class="links">
         <a href="javascript:void(0);" @click="Packages()"
-          >Packages<i class="fas fa-chevron-down"></i
-        ></a>
+          >Packages<font-awesome-icon icon="chevron-down" />
+        </a>
         <ul id="PackageChild">
           <li><NuxtLink to="carbonfootprint">Carbon Footprint</NuxtLink></li>
           <li style="margin-top: 10%">
@@ -24,27 +42,30 @@
         </ul>
       </li>
     </ul>
+
+    <!--Mobile Navigation-->
     <div class="topnav">
       <a href="#home" class="active"
-        ><img src="../images/eas-logo white@2x.png" alt=""
-      /></a>
+        ><NuxtLink to="/"
+          ><img src="../images/eas-logo white@2x.png" alt="" /></NuxtLink
+      ></a>
       <div id="myLinks">
-        <a href="#news">Who We Are</a>
-        <a href="#contact">Insights</a>
-        <a href="#about">Publications</a>
-        <a href="#about">Services</a>
-        <a href="#about">Case Studies</a>
+        <NuxtLink to="WhoWeAre">Who We Are</NuxtLink>
+        <NuxtLink to="Insight">Insights</NuxtLink>
+        <NuxtLink :to="PubsCa">Publications</NuxtLink>
+        <NuxtLink to="Services">Services</NuxtLink>
+        <NuxtLink to="WaoSum">Case Studies</NuxtLink>
         <a href="javascript:void(0);" @click="MobPack()"
-          >Packages<i class="fas fa-chevron-down"></i
-        ></a>
+          >Packages<font-awesome-icon icon="chevron-down"
+        /></a>
         <ul id="MobPack">
-          <a href="carbonfootprint.html"><li>Carbon Footprint</li></a>
-          <a href="carboncredits.html"><li>Carbon Credits</li></a>
+          <NuxtLink to="carbonfootprint"><li>Carbon Footprint</li></NuxtLink>
+          <NuxtLink to="carboncredits"><li>Carbon Credits</li></NuxtLink>
         </ul>
       </div>
       <a href="javascript:void(0);" class="icon" @click="myFunction()">
         <span style="font-size: 150%; margin-top: 15%; margin-right: 15%">
-          <i class="fa fa-bars"></i>
+          &#9776;
         </span>
       </a>
     </div>
@@ -70,6 +91,14 @@ export default {
         x.style.display = 'block'
       }
     },
+    CaseStud() {
+      const x = document.getElementById('CaseStudChild')
+      if (x.style.display === 'block') {
+        x.style.display = 'none'
+      } else {
+        x.style.display = 'block'
+      }
+    },
     MobPack() {
       const x = document.getElementById('MobPack')
       if (x.style.display === 'block') {
@@ -79,5 +108,7 @@ export default {
       }
     },
   },
+
+  props: ['PubsCa'],
 }
 </script>

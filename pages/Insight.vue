@@ -1,16 +1,14 @@
 <template>
   <div>
     <client-only placeholder="loading...">
-      <Header />
+      <Header PubsCa="/#Pubs" />
     </client-only>
     <div class="banner">
-      <div class="scrollable">
-        <img src="../images/1920px-19.png" alt="Landscape" />
-      </div>
+
     </div>
 
-    <div class="CContent">
-      <h1>What are other countries doing about climate change?</h1>
+    <div class="CContent" style="padding-top:3%;">
+      <h1 id="1">What are other countries doing about climate change?</h1>
       <p>
         Through the 2015 Paris Agreement, world governments committed to curbing
         global temperature rise to well-below 2°C above pre-industrial levels
@@ -22,13 +20,12 @@
         by 2050. We have limited time for action and the private sector has a
         crucial role to play – every sector in every market must transform.<br /><br />
         The World Resources Institute provides an up to date Interactive Chart
-        of Changes in the World's Top 10 Emitters
-        [https://www.wri.org/insights/interactive-chart-shows-changes-worlds-top-10-emitters]
+        of Changes in <a href="https://www.wri.org/insights/interactive-chart-shows-changes-worlds-top-10-emitters">the World's Top 10 Emitters</a>
         to keep you updated of the global action.
       </p>
     </div>
-    <div class="CContent CMiddle">
-      <h1>What are science based targets?</h1>
+    <div class="CContent CMiddle" style="padding-top:3%;">
+      <h1 id="2">What are science based targets?</h1>
       <p>
         Science-based targets provide a clearly-defined pathway for companies to
         reduce greenhouse gas (GHG) emissions, helping prevent the worst impacts
@@ -54,8 +51,8 @@
         </ul> 
       </p>
     </div>
-    <div class="CContent">
-      <h1>What are scope 3 emissions and why do they matter?</h1>
+    <div class="CContent" style="padding-top:3%;">
+      <h1 id="3">What are scope 3 emissions and why do they matter?</h1>
       <p>
         Did you know that scope 3 makes up the majority of emissions? In fact, they can account for up to 80%. Scope 3 emissions are indirect emissions from your supply chain, such as from the activities of your suppliers and consumers. They include both upstream and downstream emissions.<br><br>
         There are a number of benefits associated with measuring Scope 3 emissions.  For many companies, the majority of their greenhouse gas (GHG) emissions and cost reduction opportunities lie outside their own operations.  By measuring Scope 3 emissions, organisations can:<br><br>
@@ -71,38 +68,25 @@
       </p>
     </div>
 
+    <div class="CContent" style="padding-top:3%;">
+      <h1 id="4">Absolute vs Intensity targets. What’s the difference?</h1>
+      <p>
+        Climate change requires an absolute emissions reduction and this is part of an “climate integrity check” 
+        of any science based target. However, companies are mostly setting intensity targets at the point of sales 
+        – which do not necessarily guarantee absolute emission reductions, particularly in the short-term. 
+        Intensity targets can be aligned with science based targets provided that the consideration of growth 
+        expectations still leads to an absolute emission reduction.<br><br> 
+        Absolute emissions targets seem to raise an important psychological barrier in business actors in terms 
+        of the “freedom to do business” - even if businesses already operate under all sorts of constraints. 
+        On the other hand, for many stakeholders, intensity targets are seen as “potential greenwashing” because 
+        they do not guarantee absolute emission reductions, even when the reductions in intensity are very significant 
+        and it is extremely unlikely that companies in established businesses would be able to grow their activities 
+        in such a way that it would not lead to an absolute emission reduction.
+      </p>
+    </div>
+
     <InTouch />
 
-    <footer>
-      <a href="#Top">
-        <i class="fas fa-home fa-2x"></i>
-      </a>
-      <ul class="flist">
-        <li>
-          <p><a href="tel:0211234123">Phone:</a> 021 1234 123</p>
-        </li>
-
-        <li>
-          <p>
-            <a href="mailto:info@enviroaccounts.com">Email:</a>
-            info@enviroaccounts.com
-          </p>
-        </li>
-      </ul>
-      <ul class="ficons">
-        <li>
-          <a href="mailto:info@enviroaccounts.com"
-            ><i class="fas fa-envelope fa-lg"></i></a
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: info@enviroaccounts.com
-        </li>
-        <li>
-          <a href="tel:0211234123"><i class="fas fa-phone fa-sm"></i></a
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 021 1234 123
-        </li>
-      </ul>
-      <p class="fotcrit">
-        © Environmental Accounting Services 2021 | Website by Adam Hall Design
-      </p>
-    </footer>
+    <Footer/>
   </div>
 </template>

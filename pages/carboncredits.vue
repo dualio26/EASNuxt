@@ -1,15 +1,11 @@
 <template>
   <div>
     <client-only placeholder="loading...">
-      <Header />
+      <Header PubsCa="/#Pubs" />
     </client-only>
-    <div class="banner">
-      <div class="scrollable">
-        <img src="../images/Landscape.svg" alt="Landscape" />
-      </div>
-    </div>
+    <div class="banner"></div>
 
-    <div class="CContent">
+    <div class="CContent CMiddle" style="background-color: #86c886">
       <h1>Carbon Credits</h1>
       <p>
         EAS support New Zealand landowners to enter eligible forests into the
@@ -21,7 +17,7 @@
         not be able to register any carbon sequestered prior to December 2022.
       </p>
     </div>
-    <div class="CContent CMiddle" style="background-color: #86c886">
+    <div class="CContent">
       <h1>How we work with you</h1>
       <p>
         <b>Step 1 - Pre-feasibility Assessment</b><br />
@@ -45,7 +41,7 @@
         registered forests meet all the regulatory reporting requirements
       </p>
     </div>
-    <div class="CContent">
+    <div class="CContent" style="margin-top: 0% !important">
       <h1>Cost of Service</h1>
       <p>
         <b>Step 1 - Pre-feasibility Assessment</b> - $2,000 (excl. GST)<br /><br />
@@ -61,36 +57,6 @@
 
     <InTouch />
 
-    <footer>
-      <a href="#Top">
-        <i class="fas fa-home fa-2x"></i>
-      </a>
-      <ul class="flist">
-        <li>
-          <p><a href="tel:0211234123">Phone:</a> 021 1234 123</p>
-        </li>
-
-        <li>
-          <p>
-            <a href="mailto:info@enviroaccounts.com">Email:</a>
-            info@enviroaccounts.com
-          </p>
-        </li>
-      </ul>
-      <ul class="ficons">
-        <li>
-          <a href="mailto:info@enviroaccounts.com"
-            ><i class="fas fa-envelope fa-lg"></i></a
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: info@enviroaccounts.com
-        </li>
-        <li>
-          <a href="tel:0211234123"><i class="fas fa-phone fa-sm"></i></a
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 021 1234 123
-        </li>
-      </ul>
-      <p class="fotcrit">
-        © Environmental Accounting Services 2021 | Website by Adam Hall Design
-      </p>
-    </footer>
+    <Footer />
   </div>
 </template>

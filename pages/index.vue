@@ -1,7 +1,7 @@
 <template>
   <div>
     <client-only placeholder="loading...">
-      <Header />
+      <Header PubsCa="#Pubs" />
     </client-only>
     <div class="banner">
       <div class="scrollable">
@@ -27,6 +27,7 @@
         </p>
       </div>
     </div>
+
     <!--<div>
       <div class="Cap1"></div>
     </div>-->
@@ -48,7 +49,9 @@
               help to shape a future that looks towards not just a sustainable
               future, but one where people give back more than they take.
             </p>
-            <a href="waosum.html" class="CSLinks">Read this case study</a>
+            <NuxtLink to="WaoSum" class="CSLinks"
+              >Read this case study</NuxtLink
+            >
           </div>
         </div>
       </div>
@@ -68,7 +71,7 @@
         snow-sports industry. An industry so intrinsically linked to weather,
         nature and the environment.
       </p>
-      <a href="waosum.html" class="CSLinks">Read this case study</a>
+      <NuxtLink to="SkiAre" class="CSLinks">Read this case study</NuxtLink>
     </div>
 
     <div class="CaseStudy3">
@@ -83,7 +86,7 @@
         work towards building healthy ecosystems and supporting community
         wellbeing.
       </p>
-      <a href="waosum.html" class="CSLinks">Read this case study</a>
+      <NuxtLink to="WAIWan" class="CSLinks">Read this case study</NuxtLink>
     </div>
 
     <div class="ClientList">
@@ -125,10 +128,10 @@
     </div>
 
     <!--This is the div for the services Carousel-->
-    <div class="Services"></div>
+    <div id="Serve" class="Services"></div>
 
     <client-only>
-      <div class="Publications">
+      <div id="Pubs" class="Publications">
         <h1>Publications</h1>
         <div class="cards">
           <div id="C1" class="CColumn">
@@ -192,55 +195,15 @@
     </client-only>
 
     <!--Div for the insight carousel-->
-    <div class="Insights">
-      <Carousel />
-    </div>
-
-    <!--Div fo the Who we are carousel-->
-    <div class="WWA"></div>
-
-    <div class="InTouch">
-      <h1>Who we are</h1>
-    </div>
+    <Insights />
 
     <InTouch />
-
-    <footer>
-      <a href="#Top">
-        <i class="fas fa-home fa-2x"></i>
-      </a>
-      <ul class="flist">
-        <li>
-          <p><a href="tel:0211234123">Phone:</a> 021 1234 123</p>
-        </li>
-
-        <li>
-          <p>
-            <a href="mailto:info@enviroaccounts.com">Email:</a>
-            info@enviroaccounts.com
-          </p>
-        </li>
-      </ul>
-      <ul class="ficons">
-        <li>
-          <a href="mailto:info@enviroaccounts.com"
-            ><i class="fas fa-envelope fa-lg"></i></a
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: info@enviroaccounts.com
-        </li>
-        <li>
-          <a href="tel:0211234123"><i class="fas fa-phone fa-sm"></i></a
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 021 1234 123
-        </li>
-      </ul>
-      <p class="fotcrit">
-        © Environmental Accounting Services 2021 | Website by Adam Hall Design
-      </p>
-    </footer>
+    <Footer />
   </div>
 </template>
 
 <script>
-/* export default {
+export default {
   mounted: () => {
     setInterval(function () {
       const height = document.querySelector('#C1').offsetHeight
@@ -258,5 +221,5 @@
       document.getElementById('card4').style.height = y + 'px'
     }, 250)
   },
-} */
+}
 </script>
