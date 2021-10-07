@@ -85,6 +85,31 @@
       </div>
     </div>
 
+<<<<<<< HEAD
+    <div class="C2">
+      <h1>
+        David Chambers – Technical Consultant 
+      </h1>
+      <p>
+        Carly has been involved in Global Climate Change mitigation for over 20
+        years. She holds a PhD in International Climate Change Policy related to
+        the Agriculture, Forestry and Other Land Use (AFOLU) sector. Carly
+        co-founded Environmental Accounting Services in 2007. Carly has
+        contributed significantly to guidance and standards relating to
+        greenhouse gas measurement reporting and verification in the AFLOU
+        sector through her roles as an IPCC Lead Author, Methods and Guidance
+        Manager of the Global Forest Observations Initiative, and as Lead author
+        on Including Coastal Wetlands in National Greenhouse Gas Inventories.
+        She is also a recognised Verified Carbon Standard independent expert.
+        Carly’s passion is developing environmental monitoring systems for
+        international reporting and informing decision making to drive emission
+        reductions.
+        <br /><br />
+      </p>
+    </div>
+
+=======
+>>>>>>> 8e7c45019aa71c0f945549288f82f49c74fbad1f
     <div class="SContent">
       <div class="C1">
         <img class="Pimg Img3" src="../images/Eamon.png" alt="" />
