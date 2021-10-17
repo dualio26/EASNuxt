@@ -1,13 +1,10 @@
 <template>
   <div>
-    <client-only placeholder="loading...">
-      <Header PubsCa="/#Pubs" />
-    </client-only>
     <div class="banner">
 
     </div>
 
-    <div class="CContent" style="padding-top:3%;">
+    <div class="CContent" style="padding-top: 3%; ">
       <h1 id="1">What are other countries doing about climate change?</h1>
       <p>
         Through the 2015 Paris Agreement, world governments committed to curbing
@@ -24,7 +21,7 @@
         to keep you updated of the global action.
       </p>
     </div>
-    <div class="CContent CMiddle" style="padding-top:3%;">
+    <div class="CContent CMiddle" style="padding-top: 3%; ">
       <h1 id="2">What are science based targets?</h1>
       <p>
         Science-based targets provide a clearly-defined pathway for companies to
@@ -47,11 +44,11 @@
             <li>Improves investor confidence</li>
             <li>Drives innovation</li>
             <li>Reduces regulatory uncertainty</li>
-            <li>Strengthens brand reputation</li>    
-        </ul> 
+            <li>Strengthens brand reputation</li>
+        </ul>
       </p>
     </div>
-    <div class="CContent" style="padding-top:3%;">
+    <div class="CContent" style="padding-top: 3%; ">
       <h1 id="3">What are scope 3 emissions and why do they matter?</h1>
       <p>
         Did you know that scope 3 makes up the majority of emissions? In fact, they can account for up to 80%. Scope 3 emissions are indirect emissions from your supply chain, such as from the activities of your suppliers and consumers. They include both upstream and downstream emissions.<br><br>
@@ -68,19 +65,19 @@
       </p>
     </div>
 
-    <div class="CContent" style="padding-top:3%;">
+    <div class="CContent" style="padding-top: 3%; ">
       <h1 id="4">Absolute vs Intensity targets. What’s the difference?</h1>
       <p>
-        Climate change requires an absolute emissions reduction and this is part of an “climate integrity check” 
-        of any science based target. However, companies are mostly setting intensity targets at the point of sales 
-        – which do not necessarily guarantee absolute emission reductions, particularly in the short-term. 
-        Intensity targets can be aligned with science based targets provided that the consideration of growth 
-        expectations still leads to an absolute emission reduction.<br><br> 
-        Absolute emissions targets seem to raise an important psychological barrier in business actors in terms 
-        of the “freedom to do business” - even if businesses already operate under all sorts of constraints. 
-        On the other hand, for many stakeholders, intensity targets are seen as “potential greenwashing” because 
-        they do not guarantee absolute emission reductions, even when the reductions in intensity are very significant 
-        and it is extremely unlikely that companies in established businesses would be able to grow their activities 
+        Climate change requires an absolute emissions reduction and this is part of an “climate integrity check”
+        of any science based target. However, companies are mostly setting intensity targets at the point of sales
+        – which do not necessarily guarantee absolute emission reductions, particularly in the short-term.
+        Intensity targets can be aligned with science based targets provided that the consideration of growth
+        expectations still leads to an absolute emission reduction.<br><br>
+        Absolute emissions targets seem to raise an important psychological barrier in business actors in terms
+        of the “freedom to do business” - even if businesses already operate under all sorts of constraints.
+        On the other hand, for many stakeholders, intensity targets are seen as “potential greenwashing” because
+        they do not guarantee absolute emission reductions, even when the reductions in intensity are very significant
+        and it is extremely unlikely that companies in established businesses would be able to grow their activities
         in such a way that it would not lead to an absolute emission reduction.
       </p>
     </div>

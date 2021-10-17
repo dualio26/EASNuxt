@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 132.95507 110.07737"
+   version="1.1"
+   id="svg22"
+   sodipodi:docname="Graph.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1021"
+     id="namedview24"
+     showgrid="false"
+     inkscape:zoom="2.1439466"
+     inkscape:cx="-16.313711"
+     inkscape:cy="55.038685"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1-2" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:none;stroke:#85c986;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3px;}</style>
+  </defs>
+  <g
+     id="Layer_2"
+     data-name="Layer 2">
+    <g
+       id="Layer_1-2"
+       data-name="Layer 1">
+      <polyline
+         class="cls-1"
+         points="131.455 108.577 8.966 108.577 8.966 3.907"
+         id="polyline6"
+         style="stroke:#82b7e1;stroke-opacity:1" />
+      <path
+         class="cls-1"
+         d="M23.9805,54.56848h7.24792a3.05139,3.05139,0,0,1,3.05139,3.05139v50.9575a0,0,0,0,1,0,0H20.92911a0,0,0,0,1,0,0V57.61987A3.05139,3.05139,0,0,1,23.9805,54.56848Z"
+         id="path8"
+         style="stroke:#82b7e1;stroke-opacity:1" />
+      <path
+         class="cls-1"
+         d="M107.26266,63.92323h7.24792a3.05139,3.05139,0,0,1,3.05139,3.05139v41.60275a0,0,0,0,1,0,0H104.21127a0,0,0,0,1,0,0V66.97462A3.05139,3.05139,0,0,1,107.26266,63.92323Z"
+         id="path10"
+         style="stroke:#82b7e1;stroke-opacity:1" />
+      <path
+         class="cls-1"
+         d="M86.27088,79.41474H93.5188a3.05139,3.05139,0,0,1,3.05139,3.05139v26.11124a0,0,0,0,1,0,0H83.21949a0,0,0,0,1,0,0V82.46612A3.05139,3.05139,0,0,1,86.27088,79.41474Z"
+         id="path12"
+         style="stroke:#82b7e1;stroke-opacity:1" />
+      <path
+         class="cls-1"
+         d="M65.62158,41.02023H72.8695a3.05139,3.05139,0,0,1,3.05139,3.05139v64.50575a0,0,0,0,1,0,0H62.57019a0,0,0,0,1,0,0V44.07162A3.05139,3.05139,0,0,1,65.62158,41.02023Z"
+         id="path14"
+         style="stroke:#82b7e1;stroke-opacity:1" />
+      <path
+         class="cls-1"
+         d="M44.801,19.2691H52.049a3.05139,3.05139,0,0,1,3.05139,3.05139v86.25688a0,0,0,0,1,0,0H41.74965a0,0,0,0,1,0,0V22.32049A3.05139,3.05139,0,0,1,44.801,19.2691Z"
+         id="path16"
+         style="stroke:#82b7e1;stroke-opacity:1" />
+      <polyline
+         class="cls-1"
+         points="1.5 7.737 8.959 1.904 16.418 7.737"
+         id="polyline18"
+         style="stroke:#82b7e1;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
