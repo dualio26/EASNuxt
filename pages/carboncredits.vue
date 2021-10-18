@@ -40,18 +40,6 @@
         </p>
       </template>
     </PillTextPanel>
-    <PillTextPanel left>
-      <template #title>
-        <h4 class="text-h4 font-serif">Cost of Service</h4>
-      </template>
-      <template #body>
-        <p>
-          <b>Step 1 - Pre-feasibility Assessment</b> - $2,000 (excl. GST)<br /><br />
-          <b>Step 2 - Development</b> – Varies depending on size of area to be registered<br /><br />
-          <b>Step 3 - Ongoing Reporting</b> - Upto 100ha - $800 (excl. GST) / Larger than 100ha - $TBA
-        </p>
-      </template>
-    </PillTextPanel>
     <footer>
       <BasePanel theme-bg-color="accent_dark-800" theme-color="accent_light-100">
         <div class="p-300 grid md:grid-flow-col md:grid-rows-1 md:grid-cols-3 grid-flox-row grid-cols-1 gap-4">
@@ -60,7 +48,7 @@
           </a>
           <ul>
             <li>
-              <p><a href="tel:+6434248100" class="font-serif text-accent_orange-300">Phone:</a> +64 3 4248100</p>
+              <p><a href="tel:+6432428100" class="font-serif text-accent_orange-300">Phone:</a> +64 3 2428100</p>
             </li>
 
             <li>

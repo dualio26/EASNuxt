@@ -92,42 +92,40 @@
       <h1 class="text-center lg:text-display-3 text-display-3 font-serif">Our Clients</h1>
       <div
         class="
-          md:mx-64
-          mx-24
+          md:mx-48
+          mx-8
           grid
           md:grid-flow-col md:grid-cols-3 md:grid-rows-2
           grid-flow-row grid-cols-2
           gap-8
-          justify-items-stretch
           place-items-center
-          items-stretch
         "
       >
-        <VerticalCard class="max-w-48">
+        <ClientCard>
           <img src="/images/nz.png" />
-        </VerticalCard>
-        <VerticalCard class="max-w-48">
+        </ClientCard>
+        <ClientCard>
           <img src="/images/WAO-02.svg" />
-        </VerticalCard>
-        <VerticalCard class="max-w-48">
+        </ClientCard>
+        <ClientCard>
           <img src="/images/201801_gfoi_logo.png" />
-        </VerticalCard>
-        <VerticalCard class="max-w-48">
+        </ClientCard>
+        <ClientCard>
           <img src="/images/ipcc_altlogo_short_rgb.png" />
-        </VerticalCard>
-        <VerticalCard class="max-w-48">
+        </ClientCard>
+        <ClientCard>
           <img src="/images/worldbankLogo.png" />
-        </VerticalCard>
-        <VerticalCard class="max-w-48">
+        </ClientCard>
+        <ClientCard>
           <img src="/images/wai-wanaka-logo.png" />
-        </VerticalCard>
+        </ClientCard>
       </div>
     </BasePanel>
 
     <BasePanel
       theme-color="accent_light-100"
       theme-bg-color="accent_blue-900"
-      class="grid-paper relative py-900 m-0 z-0"
+      class="grid-paper relative py-300 m-0 z-0"
     >
       <PillHeading right theme-color="accent_light-100" theme-bg-color="accent_blue-300" class="relative z-10">
         <template #title>
@@ -138,7 +136,7 @@
         <client-only>
           <Carousel class="flex h-full" :per-page="1" navigation-enabled center-mode :space-padding="20">
             <Slide>
-              <ServicesPanel left theme-color="accent_light-100" theme-bg-color="accent_blue-900">
+              <ServicesPanel left theme-color="accent_light-100" theme-bg-color="accent_-900">
                 <template #picture>
                   <img class="w-full" src="/images/Question.svg" alt="" />
                 </template>
@@ -146,14 +144,6 @@
                   <h4 class="text-h4 font-serif">What we do</h4>
                 </template>
                 <template #body>
-                  <p>
-                    EAS are a team of accessible, reputable experts who work with you to create solutions to transition
-                    to sustainable future and mitigate the impacts of climate change. Our experienced team of scientists
-                    and engineers bring global experience and incites when tailoring solutions to align business and
-                    environmental performance. Our support bridges policy and technical solutions including technical
-                    specifications and methodologies, software, tools, training, capacity building, and project
-                    management of change.
-                  </p>
                   <p>We support clients to:</p>
                   <ul>
                     <li>develop and implement climate change mitigation policy,</li>
@@ -184,6 +174,7 @@
                     <li>setting boundaries,</li>
                     <li>applying methodologies and</li>
                     <li>advising the right calculation tools for your needs.</li>
+                    <li>development of measurement and reporting systems.</li>
                   </ul>
                 </template>
               </ServicesPanel>
@@ -197,11 +188,6 @@
                   <h4 class="text-h4 font-serif">Capacity Building and Training</h4>
                 </template>
                 <template #body>
-                  <p>
-                    Effective communication and engagement is where change begins. Our capacity building and training
-                    support combine technical expertise with effective, clear instruction tailored to fit the needs of
-                    the participants.
-                  </p>
                   <p>We offer both online and face-to-face training services in:</p>
                   <ul>
                     <li>International and National Climate Change Policy</li>
@@ -224,20 +210,15 @@
                 </template>
                 <template #body>
                   <p>
-                    We support clients to generate carbon credits for a range of voluntary and regulated markets. We
-                    provide an end-to-end solution for clients to realise carbon credits on their lands in either
+                    We provide an end-to-end solution for clients to realise carbon credits on their lands in either
                     voluntary or regulated markets.
                   </p>
                   <p>Our services include:</p>
                   <ul>
                     <li>application of remote sensing and GIS technologies,</li>
-                    <li>implementation of appropriate models and calculation frameworks; and</li>
+                    <li>implementation of appropriate models and calculation frameworks,</li>
                     <li>complete and transparent documentation to meet third party verification requirements.</li>
                   </ul>
-                  <p>
-                    EAS can also connect our business clients with landholders/project owners to meet carbon zero
-                    objectives.
-                  </p>
                 </template>
               </ServicesPanel>
             </Slide>
@@ -353,145 +334,147 @@
         <h2 class="text-h2 font-bold font-sans">Who we are</h2>
       </template>
     </PillHeading>
-    <div class="m-700 w-sceen-8">
-      <client-only>
-        <Carousel class="flex h-full" :per-page="1" navigation-enabled center-mode :space-padding="20">
-          <Slide>
-            <HorizontalCard left class="h-full md:mx-600 mx-300">
-              <template #picture>
-                <img src="/images/Carly-staffimage-bw.jpg" alt="Carly" />
-              </template>
-              <template #title>
-                <h3>Dr. Carly Green</h3>
-              </template>
-              <template #subtitle>
-                <h4>Managing Director / Principal</h4>
-              </template>
-              <template #body>
-                <p>
-                  Carly has been involved in Global Climate Change mitigation for over 20 years. She holds a PhD in
-                  International Climate Change Policy related to the Agriculture, Forestry and Other Land Use (AFOLU)
-                  sector. Carly co-founded Environmental Accounting Services in 2007. Carly has contributed
-                  significantly to guidance and standards relating to greenhouse gas measurement reporting and
-                  verification in the AFLOU sector.
-                </p>
-              </template>
-            </HorizontalCard>
-          </Slide>
+    <BasePanel theme-color="accent_light-100" theme-bg-color="accent_light-100" class="py-300 m-0">
+      <div class="m-700 w-sceen-8">
+        <client-only>
+          <Carousel class="flex h-full" :per-page="1" navigation-enabled center-mode :space-padding="20">
+            <Slide>
+              <HorizontalCard left class="h-full md:mx-600 mx-300">
+                <template #picture>
+                  <img src="/images/Carly-staffimage-bw.jpg" alt="Carly" />
+                </template>
+                <template #title>
+                  <h3>Dr. Carly Green</h3>
+                </template>
+                <template #subtitle>
+                  <h4>Managing Director / Principal</h4>
+                </template>
+                <template #body>
+                  <p>
+                    Carly has been involved in Global Climate Change mitigation for over 20 years. She holds a PhD in
+                    International Climate Change Policy related to the Agriculture, Forestry and Other Land Use (AFOLU)
+                    sector. Carly co-founded Environmental Accounting Services in 2007. Carly has contributed
+                    significantly to guidance and standards relating to greenhouse gas measurement reporting and
+                    verification in the AFLOU sector.
+                  </p>
+                </template>
+              </HorizontalCard>
+            </Slide>
 
-          <Slide>
-            <HorizontalCard left class="h-full md:mx-600 mx-300">
-              <template #picture>
-                <img src="/images/Michael-staffimage-bw.jpg" alt="Michael" />
-              </template>
-              <template #title>
-                <h3>Michael Green</h3>
-              </template>
-              <template #subtitle>
-                <h4>Business Manager / Principal</h4>
-              </template>
-              <template #body>
-                <p>
-                  Michael is a founding Director of Environmental Accounting Services and heads up our Software
-                  Division. Michael is focused on managing data and providing tools that make greenhouse gas accounting
-                  and reporting integrated into business systems. Michael has worked across a range of business and
-                  government levels.
-                </p>
-              </template>
-            </HorizontalCard>
-          </Slide>
+            <Slide>
+              <HorizontalCard left class="h-full md:mx-600 mx-300">
+                <template #picture>
+                  <img src="/images/Michael-staffimage-bw.jpg" alt="Michael" />
+                </template>
+                <template #title>
+                  <h3>Michael Green</h3>
+                </template>
+                <template #subtitle>
+                  <h4>Business Manager / Principal</h4>
+                </template>
+                <template #body>
+                  <p>
+                    Michael is a founding Director of Environmental Accounting Services and heads up our Software
+                    Division. Michael is focused on managing data and providing tools that make greenhouse gas
+                    accounting and reporting integrated into business systems. Michael has worked across a range of
+                    business and government levels.
+                  </p>
+                </template>
+              </HorizontalCard>
+            </Slide>
 
-          <Slide>
-            <HorizontalCard left class="h-full md:mx-600 mx-300">
-              <template #picture>
-                <img src="/images/Tami-staffimage-bw.jpg" alt="" />
-              </template>
-              <template #title>
-                <h3>Tami Horler</h3>
-              </template>
-              <template #subtitle>
-                <h4>Business Administrator</h4>
-              </template>
-              <template #body>
-                <p>
-                  Tami’s attention to detail makes sure EAS has the operational environment to keep both our staff and
-                  clients happy. She is passionate about organisational finance and human resources and is currently
-                  working towards her Business Management degree.
-                </p>
-              </template>
-            </HorizontalCard>
-          </Slide>
+            <Slide>
+              <HorizontalCard left class="h-full md:mx-600 mx-300">
+                <template #picture>
+                  <img src="/images/Tami-staffimage-bw.jpg" alt="" />
+                </template>
+                <template #title>
+                  <h3>Tami Horler</h3>
+                </template>
+                <template #subtitle>
+                  <h4>Business Administrator</h4>
+                </template>
+                <template #body>
+                  <p>
+                    Tami’s attention to detail makes sure EAS has the operational environment to keep both our staff and
+                    clients happy. She is passionate about organisational finance and human resources and is currently
+                    working towards her Business Management degree.
+                  </p>
+                </template>
+              </HorizontalCard>
+            </Slide>
 
-          <Slide>
-            <HorizontalCard left class="h-full md:mx-600 mx-300">
-              <template #picture>
-                <img src="/images/David-staffimage-bw.jpg" alt="" />
-              </template>
-              <template #title>
-                <h3>David Chambers</h3>
-              </template>
-              <template #subtitle>
-                <h4>Technical Consultant</h4>
-              </template>
-              <template #body>
-                <p>
-                  David is a Professional Engineer from the UK with a Masters Degree in Mechanical Engineering and
-                  career background in Power Generation and Renewable Energy. He is working with businesses to
-                  understand the environmental impact of their activities through greenhouse gas accounting and
-                  supporting them to make sustainability and efficiency improvements aligned with their business and
-                  environmental goals.
-                </p>
-              </template>
-            </HorizontalCard>
-          </Slide>
+            <Slide>
+              <HorizontalCard left class="h-full md:mx-600 mx-300">
+                <template #picture>
+                  <img src="/images/David-staffimage-bw.jpg" alt="" />
+                </template>
+                <template #title>
+                  <h3>David Chambers</h3>
+                </template>
+                <template #subtitle>
+                  <h4>Technical Consultant</h4>
+                </template>
+                <template #body>
+                  <p>
+                    David is a Professional Engineer from the UK with a Masters Degree in Mechanical Engineering and
+                    career background in Power Generation and Renewable Energy. He is working with businesses to
+                    understand the environmental impact of their activities through greenhouse gas accounting and
+                    supporting them to make sustainability and efficiency improvements aligned with their business and
+                    environmental goals.
+                  </p>
+                </template>
+              </HorizontalCard>
+            </Slide>
 
-          <Slide>
-            <HorizontalCard left class="h-full md:mx-600 mx-300">
-              <template #picture>
-                <img src="/images/Tim-staffimage-bw.jpg" alt="" />
-              </template>
-              <template #title>
-                <h3>Tim Graham</h3>
-              </template>
-              <template #subtitle>
-                <h4>Emissions Trading Scheme Officer</h4>
-              </template>
-              <template #body>
-                <p>
-                  Tim is EAS’s dedicated ETS officer, he is working with local landowners to help them understand how
-                  they might be able to create revenue streams and offset greenhouse gas emissions by creating and
-                  protecting forest areas so that they can act as carbon sinks. Tim has a Master’s Degree in Mechanical
-                  Engineering and four years’ experience in the software development industry in the UK.
-                </p>
-              </template>
-            </HorizontalCard>
-          </Slide>
+            <Slide>
+              <HorizontalCard left class="h-full md:mx-600 mx-300">
+                <template #picture>
+                  <img src="/images/Tim-staffimage-bw.jpg" alt="" />
+                </template>
+                <template #title>
+                  <h3>Tim Graham</h3>
+                </template>
+                <template #subtitle>
+                  <h4>Emissions Trading Scheme Officer</h4>
+                </template>
+                <template #body>
+                  <p>
+                    Tim is EAS’s dedicated ETS officer, he is working with local landowners to help them understand how
+                    they might be able to create revenue streams and offset greenhouse gas emissions by creating and
+                    protecting forest areas so that they can act as carbon sinks. Tim has a Master’s Degree in
+                    Mechanical Engineering and four years’ experience in the software development industry in the UK.
+                  </p>
+                </template>
+              </HorizontalCard>
+            </Slide>
 
-          <Slide>
-            <HorizontalCard left class="h-full md:mx-600 mx-300">
-              <template #picture>
-                <img src="/images/Eamon.png" alt="" />
-              </template>
-              <template #title>
-                <h3>Eamon Green</h3>
-              </template>
-              <template #subtitle>
-                <h4>Junior Software Developer</h4>
-              </template>
-              <template #body>
-                <p>
-                  Eamon is a Junior Java Script developer with EAS. He has a passion for communication through digital
-                  media. He has worked on a number content management systems, improving the interactive display
-                  environments to connect people to data and information. Eamon supports the development of EAS software
-                  solutions for information management, calculation tools, communication of technical information and
-                  capacity building.
-                </p>
-              </template>
-            </HorizontalCard>
-          </Slide>
-        </Carousel>
-      </client-only>
-    </div>
+            <Slide>
+              <HorizontalCard left class="h-full md:mx-600 mx-300">
+                <template #picture>
+                  <img src="/images/Eamon.png" alt="" />
+                </template>
+                <template #title>
+                  <h3>Eamon Green</h3>
+                </template>
+                <template #subtitle>
+                  <h4>Junior Software Developer</h4>
+                </template>
+                <template #body>
+                  <p>
+                    Eamon is a Junior Java Script developer with EAS. He has a passion for communication through digital
+                    media. He has worked on a number content management systems, improving the interactive display
+                    environments to connect people to data and information. Eamon supports the development of EAS
+                    software solutions for information management, calculation tools, communication of technical
+                    information and capacity building.
+                  </p>
+                </template>
+              </HorizontalCard>
+            </Slide>
+          </Carousel>
+        </client-only>
+      </div>
+    </BasePanel>
 
     <footer>
       <BasePanel theme-bg-color="accent_dark-800" theme-color="accent_light-100">
@@ -501,7 +484,7 @@
           </a>
           <ul>
             <li>
-              <p><a href="tel:+6434248100" class="font-serif text-accent_orange-300">Phone:</a> +64 3 4248100</p>
+              <p><a href="tel:+6432428100" class="font-serif text-accent_orange-300">Phone:</a> +64 3 2428100</p>
             </li>
 
             <li>
@@ -520,6 +503,7 @@
 
 <script>
 import BasePanel from "@/components/organisims/BasePanel";
+import ClientCard from "@/components/organisims/ClientCard";
 import ServicesPanel from "@/components/organisims/ServicesPanel";
 import Button from "@/components/atoms/Button";
 import Carousel from "@/components/carousel/Carousel";
@@ -534,6 +518,7 @@ export default {
     Carousel,
     Slide,
     BasePanel,
+    ClientCard,
     ServicesPanel,
     Button,
     Link,

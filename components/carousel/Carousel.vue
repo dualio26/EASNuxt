@@ -292,7 +292,7 @@ export default {
      */
     tagName: {
       type: String,
-      default: "slide",
+      default: "Slide",
     },
     /**
      * Support for v-model functionality

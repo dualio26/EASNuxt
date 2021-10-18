@@ -1,11 +1,9 @@
 <template>
   <div class="bg-accent_light-100 space-y-800">
     <div class="p-4 w-full"></div>
-    <div class="banner">
-      <div class="scrollable">
-        <img src="/images/SAANZSnip.jpg" alt="Landscape" />
-      </div>
-    </div>
+    <BasePanel>
+      <img src="/images/SAANZSnip.jpg" alt="Landscape" />
+    </BasePanel>
     <PillTextPanel left>
       <template #title>
         <h4 class="text-h4 font-serif">Ski Areas Association of New Zealand</h4>
@@ -66,7 +64,7 @@
           </a>
           <ul>
             <li>
-              <p><a href="tel:+6434248100" class="font-serif text-accent_orange-300">Phone:</a> +64 3 4248100</p>
+              <p><a href="tel:+6432428100" class="font-serif text-accent_orange-300">Phone:</a> +64 3 2428100</p>
             </li>
 
             <li>

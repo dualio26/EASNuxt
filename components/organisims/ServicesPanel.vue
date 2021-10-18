@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-row h-full mx-200" :class="[left ? 'justify-end' : '', right ? 'justify-start' : '']">
     <div v-if="left" class="flex items-center p-xs rounded-l-full md:block hidden" :class="[textcolor]">
-      <div class="flex-1 picture-fill md:mr-900 mr-0 md:h-full lg:max-w-64 max-w-32 max-h-80 md:block hidden">
+      <div class="flex-1 picture-fill w-full md:mr-900 mr-0 md:h-full lg:max-w-64 max-w-32 max-h-80 md:block hidden">
         <slot name="picture"></slot>
       </div>
     </div>
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div v-if="right" class="flex items-center p-xs rounded-r-full md:block hidden" :class="[textcolor]">
-      <div class="flex-1 picture-fit md:h-full max-w-80 max-h-80 md:block hidden">
+      <div class="flex-1 picture-fit w-full md:h-full max-w-80 max-h-80 md:block hidden">
         <slot name="picture"></slot>
       </div>
     </div>

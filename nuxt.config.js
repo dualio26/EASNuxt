@@ -29,7 +29,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "EASWebsite Beta v1.0.0",
+    title: "EAS",
     htmlAttrs: {
       lang: "en",
     },

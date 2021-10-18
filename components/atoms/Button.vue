@@ -6,7 +6,18 @@
     :theme-color="themeColor"
     :theme-bg-color="themeBgColor"
     :class="getBtnEffects"
-    class="inline-flex justify-center items-center shadow-500 hover:shadow-200 active:shadow-300 space-x-200 py-300 px-400 font-bold"
+    class="
+      inline-flex
+      justify-center
+      items-center
+      shadow-500
+      hover:shadow-200
+      active:shadow-300
+      space-x-200
+      py-300
+      px-400
+      font-bold
+    "
     @click="$emit('click', $event)"
   >
     <font-awesome-icon v-if="isIconLeft" :icon="icon"></font-awesome-icon>
@@ -63,9 +74,9 @@ export default {
     },
     getBtnEffects() {
       const classes = [];
-      classes.push("border-" + this.themeColor + "-300");
-      classes.push("bg-" + this.themeBgColor + "");
-      classes.push("hover:bg-" + this.themeBgColor + "-400");
+      classes.push("border-" + this.themeColor);
+      classes.push("bg-" + this.themeBgColor);
+      classes.push("hover:bg-" + this.themeBgColor);
       classes.push("text-" + this.themeColor);
       return classes.join(" ");
     },

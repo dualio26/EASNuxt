@@ -2,7 +2,7 @@
   <div
     v-show="carousel.pageCount > 1"
     class="VueCarousel-pagination"
-    v-bind:class="{ [`VueCarousel-pagination--${paginationPositionModifierName}`]: paginationPositionModifierName }"
+    :class="{ [`VueCarousel-pagination--${paginationPositionModifierName}`]: paginationPositionModifierName }"
   >
     <div class="VueCarousel-dot-container" role="tablist" :style="dotContainerStyle">
       <button
@@ -15,9 +15,9 @@
         :value="getDotTitle(index)"
         :aria-label="getDotTitle(index)"
         :aria-selected="isCurrentDot(index) ? 'true' : 'false'"
-        v-bind:class="{ 'VueCarousel-dot--active': isCurrentDot(index) }"
-        v-on:click="goToPage(index)"
+        :class="{ 'VueCarousel-dot--active': isCurrentDot(index) }"
         :style="dotStyle(index)"
+        @click="goToPage(index)"
       ></button>
     </div>
   </div>
@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: "pagination",
+  name: "Pagination",
   inject: ["carousel"],
   computed: {
     paginationPositionModifierName() {

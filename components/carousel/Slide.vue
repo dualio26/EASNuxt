@@ -16,20 +16,19 @@
 
 <script>
 export default {
-  name: "slide",
-  props: ["title"],
+  name: "Slide",
+  inject: ["carousel"],
+  props: {
+    title: {
+      type: String,
+      required: false,
+      default: null,
+    },
+  },
   data() {
     return {
       width: null,
     };
-  },
-  inject: ["carousel"],
-  mounted() {
-    if (!this.$isServer) {
-      this.$el.addEventListener("dragstart", e => e.preventDefault());
-    }
-
-    this.$el.addEventListener(this.carousel.isTouch ? "touchend" : "mouseup", this.onTouchEnd);
   },
   computed: {
     activeSlides() {
@@ -73,6 +72,13 @@ export default {
       const { adjustableHeight } = this.carousel;
       return adjustableHeight;
     },
+  },
+  mounted() {
+    if (!this.$isServer) {
+      this.$el.addEventListener("dragstart", e => e.preventDefault());
+    }
+
+    this.$el.addEventListener(this.carousel.isTouch ? "touchend" : "mouseup", this.onTouchEnd);
   },
   methods: {
     onTouchEnd(e) {
