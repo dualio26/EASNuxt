@@ -1,92 +1,148 @@
-import colors from 'vuetify/es5/util/colors'
+import { resolve } from "path";
+import tailwindConfig from "./tailwind.config";
 
+const primaryColor = "#82b160";
 export default {
+  vue: {
+    config: {
+      productionTip: false,
+      devtools: true,
+    },
+  },
+  server: {
+    host: "0.0.0.0", // default: localhost
+  },
+  googleAnalytics: {
+    // Options
+    id: "XXX-74957107-2",
+  },
+  alias: {
+    images: resolve(__dirname, "./assets/images"),
+  },
+  tailwindcss: {
+    configPath: "~/tailwind.config.js",
+    cssPath: "~/assets/css/main.scss",
+    exposeConfig: true,
+    config: tailwindConfig({}),
+  },
+  target: "static",
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - EAS',
-    title: 'EAS',
+    title: "EAS",
+    htmlAttrs: {
+      lang: "en",
+    },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { hid: "description", name: "description", content: "" },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico",
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/main.css'],
+  css: ["~/assets/css/main.scss", "@fortawesome/fontawesome-svg-core/styles.css"],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ["~/plugins/vuex-orm", "~/plugins/fontawesome.js", "@/plugins/vue-scrollactive", "@/plugins/menu.client"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: {
+    dirs: ["~/components/"],
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    "@nuxtjs/eslint-module",
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
-    // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
-    // https://fontawesome.com
-    '@nuxtjs/fontawesome',
+    "@nuxtjs/stylelint-module",
+    // https://go.nuxtjs.dev/tailwindcss
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
+    "@nuxtjs/google-fonts",
+    "nuxt-purgecss",
+    "vue-scrollto/nuxt",
+    "@nuxtjs/google-analytics",
   ],
-
-  fontawesome: {
-    icons: {
-      solid: ['faHome', 'faPhone', 'faEnvelope', 'faChevronDown'],
-    },
-  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content',
+    "@nuxt/content",
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
-
-  // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'en',
-    },
+  loading: {
+    color: primaryColor,
   },
 
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
+  liveEdit: false,
 
-  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
-  vuetify: {
-    customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: true,
-      themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-        },
+  meta: {
+    theme_color: primaryColor,
+  },
+  content: {
+    markdown: {
+      prism: {
+        theme: "prism-themes/themes/prism-material-oceanic.css",
       },
+      // remarkPlugins: ['~/plugins/external-links-rebase.js'],
+    },
+  },
+  googleFonts: {
+    families: {
+      "DM+Mono": true,
+      "Suez+One": true,
+      Chivo: true,
     },
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
-
-  server: {
-    host: '0.0.0.0',
+  fontawesome: {
+    icons: {
+      solid: [
+        "faUserSecret",
+        "faHeart",
+        "faEllipsisV",
+        "faShareAlt",
+        "faHome",
+        "faChevronUp",
+        "faChevronDown",
+        "faChevronLeft",
+        "faChevronRight",
+      ],
+      regular: ["faHeart"],
+      brands: ["faFontAwesome"],
+    },
   },
-}
+  purgeCSS: {
+    // These settings chock on tailwindcss and liferay
+    paths: [
+      "components/**/*.{vue,js}",
+      "layouts/**/*.vue",
+      "pages/**/*.vue",
+      "plugins/**/*.{js,ts}",
+      "nuxt.config.{js,ts}",
+    ],
+    // whitelist: [/svg.*/, /fa.*/, /text-h1/],
+    whitelist: ["text-h1"],
+    enabled: false,
+  },
+  /*
+   ** Build configuration
+   ** Gitlab
+   ** This is a working config.
+   */
+  build: {
+    extractCSS: true,
+    router: {},
+  },
+  generate: {
+    dir: "public",
+  },
+};

@@ -1,0 +1,326 @@
+$color-border-actions: rgba(0, 0, 0, 0.26);
+$color-accent-blue-100: rgba(197, 223, 241, 1);
+$color-accent-blue-200: rgba(164, 203, 232, 1);
+$color-accent-blue-300: rgba(130, 183, 225, 1);
+$color-accent-blue-400: rgba(101, 168, 225, 1);
+$color-accent-blue-50: rgba(231, 242, 249, 1);
+$color-accent-blue-500: rgba(76, 155, 224, 1);
+$color-accent-blue-600: rgba(69, 141, 211, 1);
+$color-accent-blue-700: rgba(59, 123, 193, 1);
+$color-accent-blue-800: rgba(50, 107, 176, 1);
+$color-accent-blue-900: rgba(34, 77, 147, 1);
+$color-accent-green-1-100: rgba(210, 215, 194, 1);
+$color-accent-green-1-200: rgba(180, 188, 156, 1);
+$color-accent-green-1-300: rgba(151, 164, 115, 1);
+$color-accent-green-1-400: rgba(131, 148, 82, 1);
+$color-accent-green-1-50: rgba(237, 239, 230, 1);
+$color-accent-green-1-500: rgba(111, 133, 50, 1);
+$color-accent-green-1-600: rgba(98, 120, 44, 1);
+$color-accent-green-1-700: rgba(80, 102, 35, 1);
+$color-accent-green-1-800: rgba(63, 84, 27, 1);
+$color-accent-green-1-900: rgba(33, 54, 10, 1);
+$color-accent-green-2-100: rgba(213, 231, 201, 1);
+$color-accent-green-2-200: rgba(186, 214, 167, 1);
+$color-accent-green-2-300: rgba(159, 198, 133, 1);
+$color-accent-green-2-400: rgba(140, 187, 108, 1);
+$color-accent-green-2-50: rgba(238, 245, 233, 1);
+$color-accent-green-2-500: rgba(122, 176, 85, 1);
+$color-accent-green-2-600: rgba(108, 160, 76, 1);
+$color-accent-green-2-700: rgba(91, 141, 66, 1);
+$color-accent-green-2-800: rgba(74, 121, 57, 1);
+$color-accent-green-2-900: rgba(44, 88, 39, 1);
+$color-accent-green-3-100: rgba(200, 229, 202, 1);
+$color-accent-green-3-200: rgba(166, 213, 169, 1);
+$color-accent-green-3-300: rgba(130, 197, 135, 1);
+$color-accent-green-3-400: rgba(104, 185, 110, 1);
+$color-accent-green-3-50: rgba(232, 245, 233, 1);
+$color-accent-green-3-500: rgba(79, 173, 85, 1);
+$color-accent-green-3-600: rgba(70, 158, 76, 1);
+$color-accent-green-3-700: rgba(60, 140, 65, 1);
+$color-accent-green-3-800: rgba(50, 123, 55, 1);
+$color-accent-green-3-900: rgba(33, 92, 37, 1);
+$color-accent-orange-100: rgba(254, 223, 177, 1);
+$color-accent-orange-200: rgba(254, 203, 126, 1);
+$color-accent-orange-300: rgba(253, 181, 74, 1);
+$color-accent-orange-400: rgba(253, 165, 32, 1);
+$color-accent-orange-50: rgba(255, 243, 223, 1);
+$color-accent-orange-500: rgba(253, 150, 0, 1);
+$color-accent-orange-600: rgba(249, 138, 0, 1);
+$color-accent-orange-700: rgba(243, 122, 0, 1);
+$color-accent-orange-800: rgba(237, 105, 0, 1);
+$color-accent-orange-900: rgba(228, 78, 0, 1);
+$color-dark-500: rgba(154, 152, 148, 1);
+$color-dark-600: rgba(114, 112, 108, 1);
+$color-dark-700: rgba(94, 92, 88, 1);
+$color-dark-800: rgba(63, 61, 58, 1);
+$color-dark-900: rgba(30, 29, 25, 1);
+$color-light-100: rgba(245, 243, 238, 1);
+$color-light-200: rgba(237, 235, 230, 1);
+$color-light-300: rgba(221, 219, 215, 1);
+$color-light-400: rgba(186, 184, 179, 1);
+$color-light-50: rgba(251, 249, 244, 1);
+$color-accent-grey-100: rgba(238, 239, 240, 1);
+$color-accent-grey-200: rgba(226, 228, 229, 1);
+$color-accent-grey-300: rgba(209, 210, 211, 1);
+$color-accent-grey-400: rgba(172, 173, 174, 1);
+$color-accent-grey-50: rgba(247, 248, 249, 1);
+$color-accent-grey-500: rgba(139, 140, 141, 1);
+$color-accent-grey-600: rgba(100, 101, 102, 1);
+$color-accent-grey-700: rgba(81, 82, 83, 1);
+$color-accent-grey-800: rgba(51, 52, 53, 1);
+$color-accent-grey-900: rgba(19, 20, 21, 1);
+@mixin text-style-display-display-1 {
+  font-size: 67px;
+  font-family: 'Suez One';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 86px;
+  text-decoration: none;
+}
+@mixin text-style-display-display-2 {
+  font-size: 44px;
+  font-family: 'Suez One';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 50px;
+  text-decoration: none;
+}
+@mixin text-style-display-display-3 {
+  font-size: 34px;
+  font-family: 'Suez One';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 44px;
+  text-decoration: none;
+}
+@mixin text-style-display-display-4 {
+  font-size: 20px;
+  font-family: 'Suez One';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+}
+@mixin text-style-heading-h-1 {
+  font-size: 40px;
+  font-family: 'Chivo';
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 48px;
+  text-decoration: none;
+}
+@mixin text-style-heading-h-2 {
+  font-size: 32px;
+  font-family: 'Chivo';
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 38.4px;
+  text-decoration: none;
+}
+@mixin text-style-heading-h-3 {
+  font-size: 28px;
+  font-family: 'Chivo';
+  font-weight: lighter;
+  font-style: normal;
+  line-height: 33.6px;
+  text-decoration: none;
+}
+@mixin text-style-heading-h-4 {
+  font-size: 24px;
+  font-family: 'Chivo';
+  font-weight: lighter;
+  font-style: normal;
+  line-height: 28.8px;
+  text-decoration: none;
+}
+@mixin text-style-heading-h-5 {
+  font-size: 20px;
+  font-family: 'Chivo';
+  font-weight: lighter;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+}
+@mixin text-style-heading-h-6 {
+  font-size: 16px;
+  font-family: 'Chivo';
+  font-weight: lighter;
+  font-style: normal;
+  line-height: 19.2px;
+  text-decoration: none;
+}
+@mixin text-style-body-blockquote {
+  font-size: 20px;
+  font-family: 'Chivo';
+  font-weight: lighter;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+}
+@mixin text-style-body-paragraph {
+  font-size: 16px;
+  font-family: 'Chivo';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+}
+@mixin text-style-body-paragraph-bold {
+  font-size: 16px;
+  font-family: 'Chivo';
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+}
+@mixin text-style-body-paragraph-italic {
+  font-size: 16px;
+  font-family: 'Chivo';
+  font-weight: normal;
+  font-style: italic;
+  line-height: 24px;
+  text-decoration: none;
+}
+@mixin text-style-body-paragraph-underline {
+  font-size: 16px;
+  font-family: 'Chivo';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: underline;
+}
+@mixin text-style-body-paragraph-strikethrough {
+  font-size: 16px;
+  font-family: 'Chivo';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: line-through;
+}
+@mixin text-style-body-small {
+  font-size: 12.800000190734863px;
+  font-family: 'Chivo';
+  font-weight: lighter;
+  font-style: normal;
+  line-height: 19.2px;
+  text-decoration: none;
+}
+@mixin text-style-components-tooltips {
+  font-size: 14px;
+  font-family: 'Chivo';
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 20px;
+  text-decoration: none;
+}
+@mixin text-style-components-badges {
+  font-size: 12px;
+  font-family: 'Chivo';
+  font-weight: 900;
+  font-style: normal;
+  line-height: 12px;
+  text-decoration: none;
+}
+@mixin text-style-components-buttons-large {
+  font-size: 20px;
+  font-family: 'Chivo';
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 30px;
+  text-decoration: none;
+}
+@mixin text-style-components-buttons-default {
+  font-size: 16px;
+  font-family: 'Chivo';
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+}
+@mixin text-style-components-buttons-small {
+  font-size: 14px;
+  font-family: 'Chivo';
+  font-weight: lighter;
+  font-style: normal;
+  line-height: 21px;
+  text-decoration: none;
+}
+@mixin text-style-components-popovers-header {
+  font-size: 16px;
+  font-family: 'Chivo';
+  font-weight: 900;
+  font-style: normal;
+  line-height: 20px;
+  text-decoration: none;
+}
+@mixin text-style-components-popovers-body {
+  font-size: 14px;
+  font-family: 'Chivo';
+  font-weight: 900;
+  font-style: normal;
+  line-height: 20px;
+  text-decoration: none;
+}
+@mixin text-style-components-toasts-header {
+  font-size: 14px;
+  font-family: 'Chivo';
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 21px;
+  text-decoration: none;
+}
+@mixin text-style-components-toasts-time {
+  font-size: 12px;
+  font-family: 'Chivo';
+  font-weight: 900;
+  font-style: normal;
+  line-height: 18px;
+  text-decoration: none;
+}
+@mixin text-style-link-large {
+  font-size: 22px;
+  font-family: 'Chivo';
+  font-weight: 900;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+}
+@mixin text-style-link-large-underline {
+  font-size: 22px;
+  font-family: 'Chivo';
+  font-weight: 900;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: underline;
+}
+@mixin text-style-link-medium {
+  font-size: 16px;
+  font-family: 'Chivo';
+  font-weight: bolder;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: underline;
+}
+@mixin text-style-link-small {
+  font-size: 12px;
+  font-family: 'Chivo';
+  font-weight: lighter;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: underline;
+}
+@mixin effect-style-elevation-500 {
+  box-shadow: 0px 18px 28px rgba(9, 30, 66, 0.25);
+}
+@mixin effect-style-elevation-400 {
+  box-shadow: 0px 10px 18px rgba(9, 30, 66, 0.2);
+}
+@mixin effect-style-elevation-300 {
+  box-shadow: 0px 8px 12px rgba(9, 30, 66, 0.15);
+}
+@mixin effect-style-elevation-200 {
+  box-shadow: 0px 3px 5px rgba(9, 30, 66, 0.25);
+}
+@mixin effect-style-elevation-100 {
+  box-shadow: 0px 1px 1px rgba(9, 30, 66, 0.25);
+}
