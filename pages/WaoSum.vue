@@ -51,8 +51,8 @@
           meaningful changes in their operations to reduce greenhouse gas emissions. The structure of the workshops
           provided a collaborative space where local small to medium businesses could discuss the possibilities of
           informing visitors to the tourist town of Wanaka of their impact from their visit and to provide opportunities
-          to influence the local environment in a positive way. It is hoped that his information and the actions of
-          Wanaka businesses will travel home with visitors and catalyse change in their home communities.
+          to influence the local environment in a positive way. It is hoped this information and the actions of Wanaka
+          businesses will travel home with visitors and catalyse change in their home communities.
           <br /><br />
           Visit <a href="https://www.wao.co.nz" target="_blank">Wao Wanaka</a> for action and collaboration on climate
           change mitigation in the Wanaka community.
