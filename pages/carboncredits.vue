@@ -32,11 +32,11 @@
           We work with you to collect all required documentation and evidence to enter your lands into the New Zealand
           Emission Trading Scheme. If your area is over 100ha we can ensure all the field work required is completed in
           accordance with the Ministry requirements. At the completion of this stage your eligible forest areas are
-          registered and any carbon credits registered. <br />
+          registered and any carbon credits are registered. <br />
           <br />
           <b>Step 3 – Ongoing Reporting</b><br />
           We file your returns during the reporting period and ensure your registered forests meet all the regulatory
-          reporting requirements
+          reporting requirements.
         </p>
       </template>
     </PillTextPanel>

@@ -68,15 +68,15 @@
           reduction opportunities lie outside their own operations. By measuring Scope 3 emissions, organisations can:
         </p>
         <ul>
-          <li>Assess where the emission hotspots are in their supply chain;</li>
-          <li>Identify resource and energy risks in their supply chain;</li>
+          <li>Assess where the emission hotspots are in their supply chain</li>
+          <li>Identify resource and energy risks in their supply chain</li>
           <li>
-            Identify which suppliers are leaders and which are laggards in terms of their sustainability performance;
+            Identify which suppliers are leaders and which are laggards in terms of their sustainability performance
           </li>
-          <li>Identify energy efficiency and cost reduction opportunities in their supply chain;</li>
-          <li>Engage suppliers and assist them to implement sustainability initiatives;</li>
-          <li>Improve the energy efficiency of their products;</li>
-          <li>Positively engage with employees to reduce emissions from business travel and employee commuting.</li>
+          <li>Identify energy efficiency and cost reduction opportunities in their supply chain</li>
+          <li>Engage suppliers and assist them to implement sustainability initiatives</li>
+          <li>Improve the energy efficiency of their products</li>
+          <li>Positively engage with employees to reduce emissions from business travel and employee commuting</li>
         </ul>
       </div>
     </BasePanel>

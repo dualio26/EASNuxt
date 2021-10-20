@@ -31,7 +31,7 @@
       <template #body>
         <p>
           EAS trained WAI Wānaka staff on the technical elements of greenhouse gas accounting in the agriculture sector
-          and but that in context of the emerging sector regulation being proposed by
+          and put that in context of the emerging sector regulation being proposed by
           <a href="https://hewakaekenoa.nz/">He Waka Eka Noa</a>
           . WAI Wānaka staff were then prepared to reach out to the agriculture sector as extension staff to support the
           landholders to develop a farm greenhouse gas figure. We also developed reporting templates and FAQs material

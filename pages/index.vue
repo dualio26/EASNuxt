@@ -146,11 +146,11 @@
                 <template #body>
                   <p>We support clients to:</p>
                   <ul>
-                    <li>develop and implement climate change mitigation policy,</li>
-                    <li>meet greenhouse gas regulatory requirements,</li>
-                    <li>set science based targets and drive operational efficiencies,</li>
+                    <li>develop and implement climate change mitigation policy</li>
+                    <li>meet greenhouse gas regulatory requirements</li>
+                    <li>set science based targets and drive operational efficiencies</li>
                     <li>protect and enhance the environment</li>
-                    <li>market environmental credentials.</li>
+                    <li>market environmental credentials</li>
                   </ul>
                 </template>
               </ServicesPanel>
@@ -171,10 +171,10 @@
                   </p>
                   <p>We can help with:</p>
                   <ul>
-                    <li>setting boundaries,</li>
-                    <li>applying methodologies and</li>
-                    <li>advising the right calculation tools for your needs.</li>
-                    <li>development of measurement and reporting systems.</li>
+                    <li>setting boundaries</li>
+                    <li>applying methodologies</li>
+                    <li>advising the right calculation tools for your needs</li>
+                    <li>development of measurement and reporting systems</li>
                   </ul>
                 </template>
               </ServicesPanel>
@@ -215,9 +215,9 @@
                   </p>
                   <p>Our services include:</p>
                   <ul>
-                    <li>application of remote sensing and GIS technologies,</li>
-                    <li>implementation of appropriate models and calculation frameworks,</li>
-                    <li>complete and transparent documentation to meet third party verification requirements.</li>
+                    <li>application of remote sensing and GIS technologies</li>
+                    <li>implementation of appropriate models and calculation frameworks</li>
+                    <li>complete and transparent documentation to meet third party verification requirements</li>
                   </ul>
                 </template>
               </ServicesPanel>
@@ -463,7 +463,7 @@
                 <template #body>
                   <p>
                     Eamon is a Junior Java Script developer with EAS. He has a passion for communication through digital
-                    media. He has worked on a number content management systems, improving the interactive display
+                    media. He has worked on a number of content management systems, improving the interactive display
                     environments to connect people to data and information. Eamon supports the development of EAS
                     software solutions for information management, calculation tools, communication of technical
                     information and capacity building.
@@ -475,6 +475,8 @@
         </client-only>
       </div>
     </BasePanel>
+
+    <GIT />
 
     <footer>
       <BasePanel theme-bg-color="accent_dark-800" theme-color="accent_light-100">
@@ -513,8 +515,10 @@ import PillPanel from "@/components/organisims/PillPanel";
 import Slide from "@/components/carousel/Slide";
 import VerticalCard from "@/components/organisims/VerticalCard";
 import HorizontalCard from "@/components/organisims/HorizontalCard";
+import GIT from "@/components/organisims/GIT";
 export default {
   components: {
+    GIT,
     Carousel,
     Slide,
     BasePanel,

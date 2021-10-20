@@ -28,8 +28,8 @@
       </template>
       <template #body>
         <p>
-          Staff at EAS lead lead a series of workshops at the Wao Summit 2021 focused on building capacity in greenhouse
-          gas accounting. The workshops were designed to ensure that participants are informed and motivated to make
+          Staff at EAS lead a series of workshops at the Wao Summit 2021 focused on building capacity in greenhouse gas
+          accounting. The workshops were designed to ensure that participants are informed and motivated to make
           reductions after the events. <br /><br />
           We designed the workshops into two phases:<br /><br />
           <b>Phase 1:</b> Work with a motivated small group of leading environmental tourism businesses from Wanaka to
